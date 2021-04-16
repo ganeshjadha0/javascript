@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [1, 2, 3, 4, 5, 2, 3];
+      var uniArr = [];
+      console.table(arr);
+
+      arr.forEach(function (v) {
+        //includes:check for the value in array or not.
+        if (!uniArr.includes(v)) {
+          // push:push the value in arry
+          uniArr.push(v);
+        }
+      });
+      console.log(uniArr);
+      //console.log([...new set(arr)]);
+    </script>
+  </body>
+</html>

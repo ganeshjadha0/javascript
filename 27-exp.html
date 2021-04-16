@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="demo" type="text" /><!-- oninput -->
+    <button onclick="myFunction()">cllick me</button>
+
+    <p id="err-msg"></p>
+
+    <script>
+      function myFunction() {
+        var message, x;
+        document.getElementById("err-msg").innerHTML = "";
+        x = document.getElementById("demo").value;
+        document.getElementById("demo").style.backgroundColor = "BLUE";
+        document.getElementById("err-msg").style.color = "red";
+        try {
+          if (x == "") throw "empty";
+          if (isNaN(x)) throw "not a number";
+          x = +x;
+          if (x < 5) throw "too low";
+          if (x > 5) throw "too high";
+          if (x >= 5 && x <= 10) throw "its right..";
+        } catch (err) {
+          document.getElementById("err-msg").innerHTML = "Input is " + err;
+        }
+      }
+    </script>
+  </body>
+</html>

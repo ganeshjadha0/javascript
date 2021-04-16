@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="bike3.jpg" width="500" id="bigImg" />
+    <br />
+    <img src="pngtree.jpg" width="200" height="133.2" onclick="chImg(src)" />
+    <img src="_balloon-girl-min.jpg" width="200" onclick="chImg(src) " />
+    <img src="plant.jpg" width="200" onclick="chImg(src)" />
+    <img src="_balloon-girl-min.jpg" width="200" onclick="chImg(src)" />
+    <button onclick="chImg(`bigImg`)">src</button>
+  </body>
+  <hr />
+  <button onclick="document.getElementById('bigImg').width='400' ">
+    bigImg
+  </button>
+  <button onclick="document.getElementById('bigImg').width='600' ">
+    bigImg
+  </button>
+  <button onclick="document.getElementById('bigImg').width='700' ">
+    bigImg
+  </button>
+  <button onclick="document.getElementById('bigImg').width='800' ">
+    bigImg
+  </button>
+  <script>
+    function chImg(src) {
+      document.getElementById("bigImg").src = src;
+    }
+  </script>
+</html>

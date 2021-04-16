@@ -1,0 +1,51 @@
+<!DOCKTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" ,initional-scale="1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <h1 onclick="this.style.color='red'">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas
+      harum vero, est illo, praesentium cum quaerat quia alias maiores natus
+      nostrum minima soluta? Eveniet consequuntur amet illo beatae facilis.
+    </h1>
+
+    <h1 id="demo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem iusto
+      error laudantium, qui illo iste amet minima. Voluptatum magni suscipit sed
+      reprehenderit dolorum minus dicta dignissimos voluptatibus maiores iusto.
+    </h1>
+    <h1 id="dmo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem iusto
+      error laudantium, qui illo iste amet minima. Voluptatum magni suscipit sed
+      reprehenderit dolorum minus dicta dignissimos voluptatibus maiores iusto.
+    </h1>
+    <h1 id="dm">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem iusto
+      error laudantium, qui illo iste amet minima. Voluptatum magni suscipit sed
+      reprehenderit dolorum minus dicta dignissimos voluptatibus maiores iusto.
+    </h1>
+    <h1 id="m">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga rem iusto
+      error laudantium, qui illo iste amet minima. Voluptatum magni suscipit sed
+      reprehenderit dolorum minus dicta dignissimos voluptatibus maiores iusto.
+    </h1>
+
+    <script>
+      document.getElementById("demo").addEventListener("click", function () {
+        document.getElementById("demo").style.color = "green";
+      });
+      document.getElementById("dmo").addEventListener("click", function () {
+        document.getElementById("dmo").style.color = "blue";
+      });
+      document.getElementById("dm").addEventListener("click", function () {
+        document.getElementById("dm").style.color = "pink";
+      });
+      document.getElementById("m").addEventListener("click", function () {
+        document.getElementById("m").style.color = "red";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document loop</title>
+  </head>
+  <body>
+    <h1>loop change the Image</h1>
+    <div id="element"></div>
+
+    <button onclick="imgloop()">Append Above</button>
+
+    <script>
+                function imgloop(){
+            var .ar = [];
+            ar.push("/plant.jpg");
+            ar.push("/_balloon-girl-min.jpg");
+            ar.push("/pngtree.jpg");
+
+
+      for(i=0;ar.length>i; i++)
+      {
+          var img=new Image(200,200);
+          img.src=ar[i];
+
+          var src=document.getElementById("element");
+          src.appendChild(img);
+      }
+
+                }
+    </script>
+  </body>
+</html>

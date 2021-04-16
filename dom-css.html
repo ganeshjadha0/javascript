@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body" class="body">
+    <h1 id="demo" onclick="this.style.color='hotpink'">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat
+      delectus ipsa? Cumque aliquid eius maiores cupiditate eligendi vitae?
+      Iusto quaerat dolor accusamus odit ab repellendus quo possimus provident
+      ipsum?
+    </h1>
+
+    <h1 id="blue" onclick="this.style.color='red'">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat
+      delectus ipsa? Cumque aliquid eius maiores cupiditate eligendi vitae?
+      Iusto quaerat dolor accusamus odit ab repellendus quo possimus provident
+      ipsum?
+    </h1>
+
+    <h1 id="hotpink" onclick="this.style.color='white'">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugiat
+      delectus ipsa? Cumque aliquid eius maiores cupiditate eligendi vitae?
+      Iusto quaerat dolor accusamus odit ab repellendus quo possimus provident
+      ipsum?
+    </h1>
+
+    <script>
+      var ele = document.getElementById("demo");
+      console.log(" ele : ", ele);
+
+      ele.style.color = "green";
+
+      document.getElementById("demo").style.backgroundColor = "grey";
+      document.getElementById("blue").style.backgroundColor = "blue";
+      document.getElementById("hotpink").style.backgroundColor = "hotpink";
+      document.getElementById("body").style.backgroundColor = "tomato";
+    </script>
+  </body>
+</html>
